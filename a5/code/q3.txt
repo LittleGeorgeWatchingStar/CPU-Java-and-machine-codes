@@ -1,0 +1,1 @@
+The bug of question3 is that, it deletes  first, but element e is freed right after. We cannot get access to e->next after we have freed e and top becomes a dangling pointer.
